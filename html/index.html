@@ -1,0 +1,103 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../css/google.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-qqOQyC1lY/6/xFsOTClWj/4H4i4z4uCk6UfB6jx+E0ezwHMzETlQ6OQVk6q3zT71QRMefgTOb0+sZxT+TayAQ==" crossorigin="anonymous" />
+    <script> src="google.js" </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.css">
+
+</head>
+<a href="..\html\busqueda.html" id="inicio-link">
+<body>
+
+
+  <div class="inicio">
+   
+    <img class="img1" src="../img\PABLO.L.png"/><br>
+  
+
+    <div class="search-box">
+      <input type="search" id="search" placeholder="Buscar en Google" class="fa fa-search" readonly>
+    </div>
+    
+  
+    
+  </div>
+  
+ <!--
+  <div class="icon-row">
+    <figure>
+      <a href="..\html\busqueda.html">
+        <img src="..\img\contact2.png" alt="Maps">
+      </a>
+        <figcaption>Pincha aquí para conocernos mejor</figcaption>
+      
+    </figure>
+  </div>
+-->
+  
+ 
+  <script>
+
+    var writable = true;
+
+    function autoWrite(messages, element) {
+      if (messages.length === 0) {
+        // All messages have been displayed, so return
+        return;
+      }
+    
+      element.focus();
+      element.value = '';
+      const letters = messages[0].split('');
+      let counter = 0;
+    
+      let interval = setInterval(() => {
+        if (writable) {
+          element.value += letters[counter];
+          counter++;
+          if (counter === letters.length) {
+            clearInterval(interval);
+            setTimeout(() => {
+              autoWrite(messages.slice(1), element);
+            }, 3000);
+          }
+        } else {
+          clearInterval(interval);
+          element.value = '';
+        }
+      }, 25);
+    }
+    
+    function searchBoxClick1(searchBox1) {
+      searchBox1.addEventListener('click', () => {
+        writable = false;
+        searchBox1.value = '';
+      }, false)
+    }
+    
+    let searchBox1 = document.getElementById('search')
+    autoWrite(['Hola me llamo Pablo y me alegra que estés aqui', 'Haz click en cualquier lugar de la pantalla'], searchBox1);
+    
+   
+    if (window.innerWidth < 600) {
+      alert("Este sitio web está optimizado para pantallas más grandes. Por favor, visita el sitio desde un ordenador para poder acceder a la página principal");
+      var inicioLink = document.getElementById('inicio-link');
+      inicioLink.removeAttribute('href');
+    }
+    
+   
+  
+    </script>
+  </a> 
+</body>
+
+</html>

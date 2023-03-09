@@ -1,0 +1,168 @@
+
+
+.google-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 5%;
+  perspective: 1000px;
+  max-width: 35%;
+  
+}
+
+.formacion {
+  margin: 30px auto;
+  max-width: 600px;
+  font-family: Arial, sans-serif;
+  float: left;
+  margin: 10px 15px;
+  margin-left: 12%;
+  margin-top: 35px;
+}
+
+.container {
+  width: 180px;
+  height: 350px;
+  position: relative;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid #dadce0;
+  background-color: #fff;
+  display: inline-block;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+
+.front,
+.back {
+  position: absolute;
+  top: 15%;
+  width: 180px;
+  height: 350px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.back {
+  transform: rotateY(-180deg);
+}
+
+.google-box:hover .container {
+  transform: rotateY(-180deg);
+}
+
+.google-box:hover .front {
+  transform: rotateY(180deg);
+  visibility: hidden;
+}
+
+.google-box:hover .back {
+  transform: rotateY(0deg);
+  visibility: visible;
+}
+
+.google-box .front img {
+  width: 100%;
+}
+
+.front img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px auto;
+ 
+}
+
+.front h2 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10%;
+  
+
+}
+
+.front h3 {
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  
+}
+
+.front p {
+  font-size: 10px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.back h2 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.back p {
+  font-size: 70%;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.back p:last-child {
+  margin-bottom: 0;
+}
+
+.container:hover .front {
+  transform: rotateY(180deg);
+  visibility: hidden;
+}
+
+.container:hover .back {
+  transform: rotateY(180deg);
+  visibility: visible;
+}
+
+.container-row {
+  display: flex;
+  justify-content: center;
+}
+
+.margin-right {
+  margin-right: 20px;
+}
+
+.BIdata,
+.BSMdata {
+  margin-bottom: 0;
+}
+
+.h2BI{
+  margin-top: 25%;
+}
+
+.h3BI{
+  margin-top: -5%;
+}
+
+.h2BSM{
+  margin-top: 30%;
+}
+.h3BSM{
+  margin-top: -3%;
+}
+
+.logoBI{
+  margin-top: 27%;
+}
+
+.logoBSM{
+  margin-top: 25%;
+ 
+}
+
+.logoBSM {
+  width: 70% !important; 
+  height: auto;
+  margin-left: 15%;
+}

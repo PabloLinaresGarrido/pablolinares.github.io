@@ -1,0 +1,121 @@
+.inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -50px;
+}
+
+.img1 {
+  width: 300px;
+  height: 200px;
+  margin-bottom: -25px;
+}
+
+
+
+#search:focus {
+  outline: none;
+  border-color: #666;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#search {
+  padding: 10px 50px 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-image: url("../img/lupa.png"), url("../img/micro.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 10px center, right 10px center;
+  background-size: 20px 20px, 20px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px; /* ajusta el valor según sea necesario */
+  min-width: 500px; /* ajusta el valor según sea necesario */
+  margin-bottom: 50%;
+  padding-left: 40px;
+}
+
+
+
+
+button {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 10px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+
+
+button:hover {
+  background-color: #f1f3f4;
+}
+
+button:first-child {
+  margin-right: 10px;
+}
+
+.inicio > button {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+
+
+/* Agrega estas reglas CSS */
+button:first-child {
+  margin-right: 10px;
+}
+
+.inicio > button {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  .inicio {
+    padding: 0 20px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+}
+
+.icon-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -400px; /* ajusta el valor según sea necesario */
+}
+
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 12px;
+}
+
+figcaption {
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #5f6368;
+  font-weight: 400;
+}
+
+#search:hover{
+  cursor: pointer;
+}
+
+

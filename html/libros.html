@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libros</title>
+
+  <link rel="stylesheet" href="..\css\styles.css">
+  <link rel="stylesheet" href="..\css\libros.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-qqOQyC1lY/6/xFsOTClWj/4H4i4z4uCk6UfB6jx+E0ezwHMzETlQ6OQVk6q3zT71QRMefgTOb0+sZxT+TayAQ==" crossorigin="anonymous" />
+  
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    
+    <a href="index.html">
+        <img src="../img\PABLO.L.png" alt="Google logo">
+      </a>
+        <form>
+            <input type="text" name="search" id="search" placeholder="Mandame un mensaje"readonly>
+            <div id="send-btn">
+              <a href="mailto:plinaresgarrido@gmail.com"><i class="fa fa-paper-plane"></i></a>
+            </div>
+        </form>
+        <div class="menu-icon">
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+        </div>
+      
+        <nav>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/pablolinaresgarrido/" target="_blank"><img src="..\img\linkedin.png" alt="Hangouts">linkedin</a></li>
+            <li><a href="mailto:plinaresgarrido@gmail.com"><img src="https://www.gstatic.com/images/branding/product/1x/gmail_2020q4_32dp.png" alt="Gmail"><span>Gmail</span></a></li>
+            <li><a href="https://drive.google.com/drive/folders/1tzsAkCYw0pWPI2auAcS9d8Ozsdjr1EZq?usp=sharing" target="_blank"><img src="https://www.gstatic.com/images/branding/product/2x/drive_48dp.png" alt="Drive">Drive</a></li>
+            <li><a href="../html/dashboardgoogle.html"><img src="../img/stats1.png" alt="Google Meet">Dashboard</a></li>
+            <li><a href="../html/libros.html"><img src="../img/books.png" alt="Google Fotos">Libros</a></li>
+            <li><a href="../img/CV-ESPAÑOL-ENGLISH.pdf" target="_blank"><img src="../img/cvicon.png" alt="Google Fotos">CV</a></li>
+
+            
+          </ul>
+        </nav>
+       
+        
+      </header>
+
+
+      <div class="tabss">
+      <ul class="tabs vi">
+        <li><a href="..\html\libros.html" class="active lectura" id="lectura-link"><img src="../img/books.png" alt="Lectura" style="width: 20px; height: 20px;"></a><span></span></li>
+        <li><a href="..\html\busqueda.html">Todo</a><span></span></li>
+    <li><a href="..\html\datosacademicos.html">Datos Academicos</a><span></span></li>
+    <li><a href="..\html\proyectos.html">Proyectos</a><span></span></li>
+    <li><a href="..\html\experiencia.html">Experiencia Laboral</a><span></span></li>
+    <li><a href="..\html\acreditaciones.html">Acreditaciones</a><span></span></li>
+    <li><a href="..\html\sobremi.html">Sobre mi</a><span></span></li>
+    </div>
+      
+  
+   
+  </div>
+  <select id="select-categoria">
+    <option value="todos">Todos</option>
+    <option value="economia">Economía</option>
+    <option value="filosofia">Filosofía</option>
+    <option value="politica">Política</option>
+  </select>
+  
+  <div class="book-container">
+    <a href="https://www.amazon.com/-/es/Arthur-Schopenhauer/dp/8425442230"target="_blank">
+    <div class="book categoria-filosofia">
+      <img src="..\img\el-arte-de-sobrevivir.png">
+      <h3>El arte de sobrevivir</h3>
+      <p>Arthur Schopenhauer</p>
+    </a>
+    </div>
+  
+    <a href="https://www.amazon.com/-/es/Arthur-Schopenhauer-ebook/dp/B09FC7JCCJ/ref=sr_1_2?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=37B8JCROEH0MP&keywords=El+arte+de+tratar+con+las+mujeres&qid=1678049796&s=books&sprefix=el+arte+de+tratar+con+las+mujeres%2Cstripbooks-intl-ship%2C147&sr=1-2"target="_blank">
+    <div class="book categoria-filosofia">
+      <img src="..\img\El-arte-de-tratar-con-las-mujeres.jpg">
+      <h3>El arte de tratar con las mujeres</h3>
+      <p>Arthur Schopenhauer</p>
+    </a>
+    </div>
+  
+    <a href="https://www.amazon.com/-/es/Arthur-Schopenhauer/dp/8425438926/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2FITCSRZN7R7A&keywords=El+arte+de+ser+feliz&qid=1678049820&s=books&sprefix=el+arte+de+ser+feliz%2Cstripbooks-intl-ship%2C150&sr=1-1"target="_blank">
+    <div class="book categoria-filosofia">
+      <img src="..\img\el-arte-de-ser-feliz.png">
+      <h3>El arte de ser feliz</h3>
+      <p>Arthur Schopenhauer</p>
+    </a>
+    </div>
+  
+    <a href="https://www.amazon.es/Rebeli%C3%B3n-granja-CONTEMPORANEA-George-Orwell/dp/8499890954/ref=sr_1_1?keywords=rebelion+en+la+granja+george+orwell&qid=1678049855&s=books&sr=1-1"target="_blank">
+    <div class="book categoria-politica">
+      <img src="..\img\rebelion-en-la-granja.jpg">
+      <h3>Rebelión en la granja</h3>
+      <p>George Orwell</p>
+    </a>
+    </div>
+  
+    <a href="https://www.amazon.es/Todo-aprendido-psicolog%C3%ADa-econ%C3%B3mica-implicaciones/dp/8423425541/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=CUEGWB03ST3F&keywords=La+psicolog%C3%ADa+econ%C3%B3mica&qid=1678049912&s=books&sprefix=la+psicolog%C3%ADa+econ%C3%B3mica%2Cstripbooks%2C88&sr=1-1"target="_blank">
+    <div class="book categoria-economia">
+      <img src="..\img\psicologíaeconómica.jpg">
+      <h3>La psicología económica</h3>
+      <p>Richard H.Thaler</p>
+    </a>
+    </div>
+  
+    <a href="https://www.amazon.es/El-arte-guerra-Sun-Tzu/dp/8494709208/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2TQRJVDS8NCCQ&keywords=El+arte+de+la+guerra&qid=1678049936&s=books&sprefix=el+arte+de+la+guerra%2Cstripbooks%2C82&sr=1-1"target="_blank">
+    <div class="book categoria-politica">
+      <img src="..\img\el-arte-de-la-guerra-103.jpg">
+      <h3>El arte de la guerra</h3>
+      <p>Sun tzu</p>
+    </a>
+    </div>
+  
+    <a href="https://www.amazon.es/h%C3%A1bitos-adolescentes-altamente-efectivos-digital/dp/8466340696/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=32H8EK4WA3M8L&keywords=7+h%C3%A1bitos+de+adolescentes+altamente+eficiente&qid=1678049961&s=books&sprefix=7+h%C3%A1bitos+de+adolescentes+altamente+eficientes%2Cstripbooks%2C82&sr=1-1"target="_blank">
+    <div class="book categoria-economia">
+      <img src="..\img\7habitos.jpg">
+      <h3>7 hábitos de adolescentes altamente eficientes</h3>
+      <p>Sean Covey</p>
+    </a>
+    </div>
+ 
+    <a href="https://www.amazon.es/quer%C3%ADas-saber-bitcoin-criptomonedas-blockchain/dp/8499986587/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=ADJDNCE7RBFM&keywords=Todo+lo+que+quer%C3%ADas+saber+sobre+bitcoin%2C+blockchain+y+criptomonedas+y+no+te+atrev%C3%ADas+a+preguntar&qid=1678049988&s=books&sprefix=todo+lo+que+quer%C3%ADas+saber+sobre+bitcoin+blockchain+y+criptomonedas+y+no+te+atrev%C3%ADas+a+preguntar%2Cstripbooks%2C74&sr=1-1"target="_blank">
+    <div class="book categoria-economia">
+      <img src="..\img\crypto.jpg">
+      <h3>Todo lo que querías saber sobre bitcoin, blockchain y criptomonedas y no te atrevías a preguntar</h3>
+      <p>Carlos Domingo</p>
+    </a>
+    </div>
+  
+    <a href="https://www.amazon.es/Gu%C3%ADa-invertir-Clave-Robert-Kiyosaki/dp/8466354360/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3EQDKX407GH4B&keywords=Gu%C3%ADa+para+invertir&qid=1678050014&s=books&sprefix=gu%C3%ADa+para+invertir%2Cstripbooks%2C81&sr=1-1"target="_blank">
+    <div class="book categoria-economia">
+      <img src="..\img\invertir.jpg">
+      <h3>Guía para invertir</h3>
+      <p>Robert Kiyosaki</p>
+    </a>
+    </div>
+ 
+    <a href="https://www.amazon.es/El-tatuador-Auschwitz-NF-Novela/dp/8467059532/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=32EEALPCLM7B1&keywords=El+tatuador+de+Auschwitz&qid=1678050039&s=books&sprefix=el+tatuador+de+auschwitz%2Cstripbooks%2C79&sr=1-1"target="_blank">
+    <div class="book categoria-politica">
+      <img src="..\img\tatuador.jpg">
+      <h3>El tatuador de Auschwitz</h3>
+      <p>Heather Morris</p>
+    </a>
+    </div>
+ 
+    <a href="https://www.amazon.es/El-arte-seducci%C3%B3n-Robert-Greene/dp/8467028912/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1AR9SJPXKNLVO&keywords=El+arte+de+la+seducci%C3%B3n&qid=1678050062&s=books&sprefix=el+arte+de+la+seducci%C3%B3n%2Cstripbooks%2C72&sr=1-1"target="_blank">
+    <div class="book categoria-filosofia">
+      <img src="..\img\seduccion.jpg">
+      <h3>El arte de la seducción</h3>
+      <p>Robert Greene</p>
+    </a>
+    </div>
+  
+    <a href="https://www.amazon.es/monje-que-vendi%C3%B3-Ferrari-CLAVE/dp/8499087124" target="_blank">
+    <div class="book categoria-filosofia">
+      <img src="..\img\ferrari.jpg">
+      <h3>El monje que vendió su ferrari</h3>
+      <p>Robin Sharma</p>
+    </a>
+    </div>
+  
+    <a href="https://www.amazon.com/-/es/Robert-Greene-ebook/dp/B07JR7BRV1" target="_blank">
+    <div class="book categoria-politica">
+      <img src="..\img\48leyes.png">
+      <h3>Las 48 leyes del poder</h3>
+      <p>Robert Greene</p>
+    </a>
+    </div>
+ 
+    <!-- Añade más libros aquí -->
+  </div>
+  
+	</main>
+  <style>
+    footer{
+      margin-top: 0%;
+    }
+  </style>
+  <script>
+
+    var writable = true;
+
+    function autoWrite(messages, element) {
+      if (messages.length === 0) {
+        // All messages have been displayed, so return
+        return;
+      }
+    
+      element.focus();
+      element.value = '';
+      const letters = messages[0].split('');
+      let counter = 0;
+    
+      let interval = setInterval(() => {
+        if (writable) {
+          element.value += letters[counter];
+          counter++;
+          if (counter === letters.length) {
+            clearInterval(interval);
+            setTimeout(() => {
+              autoWrite(messages.slice(1), element);
+            }, 3000);
+          }
+        } else {
+          clearInterval(interval);
+          element.value = '';
+        }
+      }, 25);
+    }
+    
+    function searchBoxClick1(searchBox1) {
+      searchBox1.addEventListener('click', () => {
+        writable = false;
+        searchBox1.value = '';
+      }, false)
+    }
+    
+    let searchBox1 = document.getElementById('search')
+    autoWrite(['Aquí os dejo un listado de alguno de los libros que he ido encontrando más relevantes a lo largo de los años',"Haz click sobre el libro si te interesa comprarlo"], searchBox1);
+    
+    const select = document.getElementById("select-categoria");
+const books = document.querySelectorAll(".book");
+
+select.addEventListener("change", () => {
+  const categoriaSeleccionada = select.value;
+  
+  books.forEach(book => {
+    book.classList.add("hidden");
+    
+    if (categoriaSeleccionada === "todos" || book.classList.contains(`categoria-${categoriaSeleccionada}`)) {
+      book.classList.remove("hidden");
+    }
+  });
+});
+
+    </script>
+    <script src="../index.js"></script>
+    <footer>
+      <div class="container-footer">
+        <p>© March 2023 - Última modificación</p>
+      </div>
+    </footer>
+
+    <script>
+
+      const menuIcon = document.querySelector('.menu-icon');
+      const nav = document.querySelector('nav');
+      const navLinks = document.querySelectorAll('nav a');
+  
+      menuIcon.addEventListener('click', () => {
+        nav.classList.toggle('open');
+      });
+  
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('open');
+        });
+      });
+
+      document.querySelector('.menu-icon').addEventListener('click', function() {
+        document.querySelector('nav').classList.toggle('active');
+        document.querySelector('.menu-icon').classList.toggle('active');
+      });
+      
+      
+        menuIcon.addEventListener('click', () => {
+          nav.classList.toggle('open');
+        });
+     
+     
+      
+      
+
+      const isDarkMode = true; // cambiar a "false" para desactivar el modo oscuro
+if (isDarkMode) {
+nav.classList.add('dark-mode');
+} else {
+nav.classList.remove('dark-mode');
+}
+
+
+    </script>
+</body>
+</html>
